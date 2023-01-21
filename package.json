@@ -1,0 +1,22 @@
+{
+  "name": "wp-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "wordpress theme boilerplate",
+  "author": "Marius P.",
+  "license": "MIT",
+  "scripts": {
+    "js:index": "wp-scripts start --output-path=assets/scripts",
+    "style:front": "sass -w --style=compressed src/front.scss:assets/styles/front.css --no-source-map",
+    "style:editor": "sass -w --style=compressed src/editor.scss:assets/styles/editor.css --no-source-map",
+    "start": "npm run js:index & npm run style:front & npm run style:editor"
+  },
+  "homepage": "https://github.com/wisethee/wp-theme-boilerplate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisethee/wp-theme-boilerplate.git"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^25.2.0",
+    "sass": "^1.57.1"
+  }
+}
